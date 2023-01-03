@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative './person'
 
 # Inherit all properties and methos of person class. And add playhook function
