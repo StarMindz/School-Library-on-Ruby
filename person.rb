@@ -37,8 +37,4 @@ class Person
         return @age >= 18
     end
 
-
-
-
-
 end
