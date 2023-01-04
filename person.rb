@@ -1,14 +1,23 @@
+require_relative './nameable'
+require_relative './trimmer_decorator'
+require_relative './capitalize_decorator'
+require_relative './base_decorator'
 # Parent class for all other children classes
-class Person
+class Person < Nameable
   def initialize(age, name = 'Unknown', parent_permission: true)
     @id = Random.rand(1..10_000)
     @name = name
     @age = age
     @parent_permission = parent_permission
+    super()
   end
 
-  attr_accessors :id, :name, :age
-  attr_writer :name, :age
+  attr_accessor :name, :age
+  attr_writer :id
+
+  def correct_name
+    @name
+  end
 
   private
 
@@ -22,3 +31,10 @@ class Person
     of_age? || @parent_permission
   end
 end
+
+person = Person.new(22, 'maximilianus')
+puts person.correct_name
+capitalized_person = CapitalizeDecorator.new(person)
+puts capitalized_person.correct_name
+capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
+puts capitalized_trimmed_person.correct_name

@@ -76,8 +76,11 @@ To get a local copy up and running, follow these steps.
 
 - clone the repo like this: 
 ​
-  git clone https://github.com/StarMindz/School-Library-on-Ruby
+  git clone https://github.com/StarMindz/School-Library-on-Rub
 
+- To run code use the below command on terminal 
+
+   ruby person.rb
 
 ### Prerequisites
 
@@ -158,8 +161,6 @@ If you like this project, please give it a star and also follow me on GitHub for
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
