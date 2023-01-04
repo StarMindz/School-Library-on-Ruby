@@ -1,4 +1,4 @@
-require_relative './nameable.rb'
+require_relative './nameable'
 # Parent class for all other children classes
 class Person < Nameable
   def initialize(nameable, age, name = 'Unknown', parent_permission: true)
