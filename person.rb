@@ -1,11 +1,12 @@
 require_relative './nameable.rb'
 # Parent class for all other children classes
 class Person < Nameable
-  def initialize(age, name = 'Unknown', parent_permission: true)
+  def initialize(nameable, age, name = 'Unknown', parent_permission: true)
     @id = Random.rand(1..10_000)
     @name = name
     @age = age
     @parent_permission = parent_permission
+    @nameable = nameable
     super()
   end
 
@@ -13,7 +14,7 @@ class Person < Nameable
   attr_writer :name, :age
 
   def correct_name
-    @name
+    @nameable.correct_name
   end
 
   private
