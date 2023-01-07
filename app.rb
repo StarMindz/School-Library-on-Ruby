@@ -110,6 +110,13 @@ class App
         end
     end
 
+    def go_back
+        puts ''
+        print 'Press Enter to go back to menu '
+        gets.chomp
+        puts ''
+    end
+
 end
 
 
