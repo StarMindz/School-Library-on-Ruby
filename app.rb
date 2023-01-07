@@ -43,9 +43,9 @@ class App
         @people.push(student)
         puts 'Student has been successfully created'
         go_back
-      end
+    end
     
-      def create_teacher
+    def create_teacher
         print 'Age: '
         age = gets.chomp.to_i
         print 'Name: '
@@ -57,9 +57,9 @@ class App
         @people.push(teacher)
         puts 'Teacher has been created successfully'
         go_back
-      end
+    end
 
-      def create_rental
+    def create_rental
         puts 'Select a book from the following list by number (not id)'
         list_of_books
         book_index = gets.chomp.to_i
@@ -76,6 +76,18 @@ class App
         rental = Rental.new(date, book, person)
         @rentals.push(rental)
         puts 'Rental has been successfully created'
-      end
-    end    
+    end
+
+    def list_of_people
+        if @people.empty?
+            puts 'No people found!'
+            go_back
+        end
+        @people.each_with_index do |person, i|
+            puts "#{i}) [#{person.class}] Name: #{person.name}, Age: #{person.age}, ID: #{person.id}"
+        end
+    end
+
+
+end    
 
