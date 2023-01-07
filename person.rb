@@ -13,8 +13,7 @@ class Person < Nameable
     super()
   end
 
-  attr_accessor :name, :age
-  attr_writer :id
+  attr_accessor :name, :age, :id
   attr_reader :rentals
 
   def correct_name

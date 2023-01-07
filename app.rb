@@ -90,7 +90,7 @@ class App
     print 'Has parent permission? [Y/N] '
     has_permission = gets.chomp.downcase == 'y'
 
-    student = Student.new(nil, age, name, has_permission)
+    student = Student.new(2, age, name, has_permission)
     @people.push(student)
 
     puts 'Student has been successfully created'
@@ -105,7 +105,7 @@ class App
     print 'specialization '
     specialization = gets.chomp.downcase
 
-    teacher = Teacher.new(age, specialization, name)
+    teacher = Teacher.new(specialization, age, name)
     @people.push(teacher)
 
     puts 'Teacher has been created successfully'
@@ -116,7 +116,7 @@ class App
     puts 'Select a book from the following list by number (not id)'
     list_of_books
     book_index = gets.chomp.to_i
-    book = @book[book_index]
+    book = @books[book_index]
 
     puts 'Select a person from the following list by number (not id)'
     list_of_people
@@ -141,7 +141,7 @@ class App
     end
 
     @people.each_with_index do |person, i|
-      puts "#{i}) [#{person.classroom}] Name: #{person.name}, Age: #{person.age}, ID: #{person.id}"
+      puts "#{i})  Name: #{person.name}, Age: #{person.age}, ID: #{person.id}"
     end
   end
 
