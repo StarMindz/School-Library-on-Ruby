@@ -84,10 +84,20 @@ class App
             go_back
         end
         @people.each_with_index do |person, i|
-            puts "#{i}) [#{person.class}] Name: #{person.name}, Age: #{person.age}, ID: #{person.id}"
+            puts "#{i}) [#{person.classroom}] Name: #{person.name}, Age: #{person.age}, ID: #{person.id}"
         end
     end
 
+    def list_of_books
+        if @books.empty?
+            puts 'No Book found!'
+            go_back
+        end
+
+        @books.each_with_index do |book, i|
+            puts "#{i}) Title: #{book.title}, Author: #{book.author} "
+        end
+    end
 
 end    
 
