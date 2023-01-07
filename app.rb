@@ -127,7 +127,7 @@ class App
     date = gets.chomp
     actual_date = Date.parse(date)
 
-    rental = Rental.new(actual_date, book, person)
+    rental = Rental.new(person, book, actual_date)
     @rentals.push(rental)
 
     puts 'Rental has been successfully created'
