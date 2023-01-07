@@ -61,22 +61,21 @@ class App
 
       def create_rental
         puts 'Select a book from the following list by number (not id)'
-        list_books
+        list_of_books
         book_index = gets.chomp.to_i
         book = @book[book_index]
     
         puts 'Select a person from the following list by number (not id)'
-        list_people
+        list_of_people
         person_index = gets.chomp.to_i
         person = @people[person_index]
         print 'Date :'
-        date_value = gets.chomp
-        date = convert_date(date_value)
+        date = gets.chomp
+        actual_date = Date.parse(date)
     
         rental = Rental.new(date, book, person)
-        puts rental
         @rentals.push(rental)
-        puts 'Rental created successfully'
+        puts 'Rental has been successfully created'
       end
     end    
 
