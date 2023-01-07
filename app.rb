@@ -7,6 +7,51 @@ class App
         @rentals = []
     end
 
+    def run
+        puts 'Welcome to school library App!'
+        puts ''
+        puts ''
+        puts 'Please put an option by entering a number!'
+        until pick_option
+            input = gets.chomp
+            if input == '7'
+                puts 'Thanks for using School Library App (^_^)'
+                break
+            end
+            run_option(input)
+        end
+    end
+
+    def pick_option
+        puts '1 - List all books'
+        puts '2 - List all People'
+        puts '3 - Create a person'
+        puts '4 - Create a book'
+        puts '5 - Create a rental'
+        puts '6 - list all rentals for a given person id'
+        puts '7 - Exit'
+    end
+
+    def run_option(input)
+        case input
+        when '1'
+            list_of_books
+        when '2'
+            list_of_people
+        when '3'
+            create_person
+        when '4'
+            create_book
+        when '5'
+            create_rental
+        when '6'
+            list_of_rentals
+        else
+            'Enter digit from 1 to 7'
+        end
+    end
+
+
     def create_person
         print 'Do you want to create a student (1) or a teacher (2)? [input the number]'
         select_person = gets.chomp.to_i
