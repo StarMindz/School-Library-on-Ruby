@@ -105,7 +105,7 @@ class App
     print 'specialization '
     specialization = gets.chomp.downcase
 
-    teacher = Teacher.new(age, specialization, name)
+    teacher = Teacher.new(nil, age, specialization, name)
     @people.push(teacher)
 
     puts 'Teacher has been created successfully'
