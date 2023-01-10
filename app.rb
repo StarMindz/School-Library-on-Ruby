@@ -45,25 +45,20 @@ class App
     case input
     when '1'
       lists.list_of_books
-      go_back
     when '2'
       lists.list_of_people
-      go_back
     when '3'
       @people.push(create.create_person)
-      go_back
     when '4'
       @books.push(create.create_book)
-      go_back
     when '5'
       @rentals.push(create.create_rental)
-      go_back
     when '6'
       lists.list_of_rentals
-      go_back
     else
       'Invalid Input. Enter digit from 1 to 7'
     end
+    go_back
   end
 
   def go_back
