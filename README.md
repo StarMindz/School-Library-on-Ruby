@@ -94,7 +94,7 @@ To get a local copy up and running, follow these steps.
 
 ### Setup
 
-- Git clone `https://github.com/Efiamotu-1/OOP-School-Library.git`
+- Git clone `https://github.com/StarMindz/School-Library-on-Ruby`
 - 
 - cd `school_library`
 - run `bundle install`
