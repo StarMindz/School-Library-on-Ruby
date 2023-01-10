@@ -117,6 +117,12 @@ Use ruby <code-file> to run ruby files on terminal when ruby has ben installed
 - GitHub: [@Starmindz](https://github.com/StarMindz)
 - LinkedIn: [Stanley Nnamani](https://www.linkedin.com/in/stanley-nnamani/)
 
+👤 **Marcos Gualtero Lourenzo**
+
+- GitHub: [@Goruchie](https://github.com/Goruchie)
+- Twitter: [@Goruchie2](https://twitter.com/Goruchie2)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/marcosgualtero/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
