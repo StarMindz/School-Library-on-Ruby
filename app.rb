@@ -65,7 +65,7 @@ class App
       'Invalid Input. Enter digit from 1 to 7'
     end
   end
-
+  
   def go_back
     puts ''
     print 'Press Enter to go back to menu '
