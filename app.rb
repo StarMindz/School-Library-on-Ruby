@@ -60,7 +60,7 @@ class App
     end
     go_back
   end
-
+  
   def go_back
     puts ''
     print 'Press Enter to go back to menu '
