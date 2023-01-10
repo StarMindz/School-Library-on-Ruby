@@ -112,7 +112,7 @@ Use ruby <code-file> to run ruby files on terminal when ruby has ben installed
 
 > Mention all of the collaborators of this project.
 
-👤 **Stanley Nnamani AKA StarMindz**
+👤 **Stanley Nnamani Wisdom AKA StarMindz**
 
 - GitHub: [@Starmindz](https://github.com/StarMindz)
 - LinkedIn: [Stanley Nnamani](https://www.linkedin.com/in/stanley-nnamani/)
