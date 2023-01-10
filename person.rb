@@ -9,14 +9,20 @@ class Person < Nameable
     @name = name
     @age = age
     @parent_permission = parent_permission
+    @rentals = []
     super()
   end
 
-  attr_accessor :name, :age
-  attr_writer :id
+  attr_accessor :name, :age, :id
+  attr_reader :rentals
 
   def correct_name
     @name
+  end
+
+  def add_rentals(rental)
+    rentals.push(rental)
+    rental.add_person(self) unless rental.person == self
   end
 
   private
