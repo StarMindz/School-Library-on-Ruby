@@ -43,7 +43,7 @@ This is a useful tool for Librarians that helps to record what books are in the 
   
  <!-- Features --> 
   
- ### Key Features <a name="key-features"></a> 
+ Key Features <a name="key-features"></a> 
   
  The tool allows librarians to 
 - Add new students or teachers.
@@ -64,6 +64,7 @@ This is a useful tool for Librarians that helps to record what books are in the 
 >Link to live Demo 
 
 - [Coming soon]() 
+> To run app on terminal. Use the command "ruby main.rb"
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
