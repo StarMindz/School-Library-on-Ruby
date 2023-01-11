@@ -152,6 +152,7 @@ If you like this project, please give it a star and also follow me on GitHub for
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+- A Big Thank you🙏 to my friend [Luis David](https://github.com/LuisDavidRodriguez) from whom I gained inspiration during the course of building this project Thank you Luis, You are the best!!
 - Thumb ups to all the Naija Afrobeat Musicians whose beautiful music made building this project more fun
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
