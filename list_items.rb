@@ -1,8 +1,10 @@
+require_relative './reader'
 class List
   def initialize(people, books, rentals)
     @books = books
     @people = people
     @rentals = rentals
+    @validate = Reader.new
   end
 
   def list_of_people
@@ -22,11 +24,7 @@ class List
   end
 
   def list_of_rentals
-    puts 'Select id of any person'
-    @people.each { |person| puts "id: #{person.id}, Person: #{person.name}" }
-
-    print 'Person id: '
-    person_id = gets.chomp.to_i
+    person_id = @validate.read_for_rental_lists(@people)
 
     @rentals.each do |rental|
       if rental.person.id.to_i == person_id
