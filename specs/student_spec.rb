@@ -19,8 +19,6 @@ describe Student do
     end
   end
 
-
-
   context 'Object parameters' do
     it 'returns the student classroom' do
       @student.classroom.should eql 'SS3'
