@@ -10,6 +10,6 @@ class Book
 
   def add_rentals(rental)
     @rentals.push(rental)
-    rental.add_book(self) unless (rental.book = self)
+    rental.add_book(self) unless rental.book == self
   end
 end

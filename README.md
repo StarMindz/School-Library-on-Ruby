@@ -46,6 +46,9 @@ This is a useful tool for Librarians that helps to record what books are in the 
  ### Key Features <a name="key-features"></a> 
   
  The tool allows librarians to 
+- Show persons.
+- Show books.
+- Show rentals.
 - Add new students or teachers.
 - Add new books.
 - Save records of who borrowed a given book and when.
@@ -112,10 +115,16 @@ Use ruby <code-file> to run ruby files on terminal when ruby has ben installed
 
 > Mention all of the collaborators of this project.
 
-👤 **Stanley Nnamani AKA StarMindz**
+👤 **Stanley Nnamani Wisdom AKA StarMindz**
 
 - GitHub: [@Starmindz](https://github.com/StarMindz)
 - LinkedIn: [Stanley Nnamani](https://www.linkedin.com/in/stanley-nnamani/)
+
+👤 **Marcos Gualtero Lourenzo**
+
+- GitHub: [@Goruchie](https://github.com/Goruchie)
+- Twitter: [@Goruchie2](https://twitter.com/Goruchie2)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/marcosgualtero/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
