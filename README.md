@@ -46,6 +46,9 @@ This is a useful tool for Librarians that helps to record what books are in the 
  ### Key Features <a name="key-features"></a> 
   
  The tool allows librarians to 
+- Show persons.
+- Show books.
+- Show rentals.
 - Add new students or teachers.
 - Add new books.
 - Save records of who borrowed a given book and when.

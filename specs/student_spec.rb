@@ -20,9 +20,7 @@ describe Student do
     end
   end
 
-
-
-  context 'Object parameters and Methods' do
+  context 'Object parameters and and methods' do
     it 'returns the student classroom' do
       @student.classroom.should eql 'SS3'
     end
@@ -44,5 +42,6 @@ describe Student do
     it 'play_hookey method should perform as expected' do
         @student.play_hooky.should eql '¯\(ツ)/¯'
     end
+
   end
 end

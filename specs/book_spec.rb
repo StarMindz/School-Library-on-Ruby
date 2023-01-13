@@ -19,8 +19,6 @@ describe Book do
     end
   end
 
-
-
   context 'Object parameters' do
     it 'returns the book title' do
       @book.title.should eql 'Romeo and Juliet'

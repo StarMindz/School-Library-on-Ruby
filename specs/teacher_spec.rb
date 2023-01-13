@@ -19,8 +19,6 @@ describe Teacher do
     end
   end
 
-
-
   context 'Object parameters' do
     it 'returns the teachers specialization' do
       @teacher.specialization.should eql 'Math'
