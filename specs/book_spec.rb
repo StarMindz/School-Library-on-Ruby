@@ -1,4 +1,6 @@
 require_relative './../book'
+require_relative './../rental'
+require_relative './../student'
 
 describe Book do
   before :each do
@@ -19,13 +21,21 @@ describe Book do
     end
   end
 
-  context 'Object parameters' do
+  context 'Object parameters and methods' do
     it 'returns the book title' do
       @book.title.should eql 'Romeo and Juliet'
     end
 
     it 'returns the correct author' do
       @book.author.should eql 'William Shakespeare'
+    end
+
+    it 'add rentals and confirm that rentals has been added' do
+      @new_student = Student.new('SS3', 20, 'Stanley Nnamani', true)
+      @new_book = Book.new('Romeo and Juliet', 'William')
+      @rental = Rental.new(@new_student, @new_book, '12-12-2015')
+      @book.add_rentals(@rental)
+      @book.rentals[0].should(be_an_instance_of(Rental))
     end
   end
 end

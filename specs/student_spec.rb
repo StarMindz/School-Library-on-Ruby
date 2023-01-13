@@ -34,14 +34,13 @@ describe Student do
     end
 
     it 'add classroom and confirm that classroom has been added' do
-        @class = Classroom.new('Math Class')
-        @student.add_class(@class)
-        @student.classroom.should(be_an_instance_of(Classroom))
+      @class = Classroom.new('Math Class')
+      @student.add_class(@class)
+      @student.classroom.should(be_an_instance_of(Classroom))
     end
 
     it 'play_hookey method should perform as expected' do
-        @student.play_hooky.should eql '¯\(ツ)/¯'
+      @student.play_hooky.should eql '¯\(ツ)/¯'
     end
-
   end
 end

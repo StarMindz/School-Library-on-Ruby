@@ -25,9 +25,9 @@ describe Rental do
 
   context 'Object parameters and methods' do
     it 'add book and confirm that book has been added' do
-        @second_book = Book.new('Romeo and Juliet', 'William Shakespeare')
-        @rental.add_book(@second_book)
-        @rental.book.should(be_an_instance_of(Book))
+      @second_book = Book.new('Romeo and Juliet', 'William Shakespeare')
+      @rental.add_book(@second_book)
+      @rental.book.should(be_an_instance_of(Book))
     end
 
     it 'add person and confirm that person has been added' do
