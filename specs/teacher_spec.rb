@@ -33,5 +33,9 @@ describe Teacher do
     it 'returns the teacher name' do
       @teacher.name.should eql 'Shehu'
     end
+
+    it 'can_use_services? method should perform as expected' do
+        @teacher.can_use_services?.should eql true
+    end
   end
 end

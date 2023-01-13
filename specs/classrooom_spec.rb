@@ -28,5 +28,11 @@ describe Student do
     it 'classroom student list should be empty initially' do
       expect(@class.students.length).to eql 0
     end
+
+    it 'classroom student list should increasse when a student object has been added' do
+      @student = Student.new('SS3', 20, 'Stanley', true)
+      @class.add_student(@student)
+      expect(@class.students.length).to eql 1
+    end
   end
 end

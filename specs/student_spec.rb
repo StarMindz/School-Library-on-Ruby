@@ -1,4 +1,5 @@
 require_relative './../student'
+require_relative './../classroom'
 
 describe Student do
   before :each do
@@ -21,7 +22,7 @@ describe Student do
 
 
 
-  context 'Object parameters' do
+  context 'Object parameters and Methods' do
     it 'returns the student classroom' do
       @student.classroom.should eql 'SS3'
     end
@@ -32,6 +33,16 @@ describe Student do
 
     it 'returns the student name' do
       @student.name.should eql 'Stanley'
+    end
+
+    it 'add classroom and confirm that classroom has been added' do
+        @class = Classroom.new('Math Class')
+        @student.add_class(@class)
+        @student.classroom.should(be_an_instance_of(Classroom))
+    end
+
+    it 'play_hookey method should perform as expected' do
+        @student.play_hooky.should eql '¯\(ツ)/¯'
     end
   end
 end
